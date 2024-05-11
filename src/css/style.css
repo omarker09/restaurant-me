@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poetsen+One&display=swap');
+* {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+:root {
+    --landing-bg: rgba(255,240,233,255);
+    --secondary-color: rgb(201, 60, 83);
+    --secondary-color-orange:  rgb(251, 146, 60);
+    --middle-plate-dark: rgb(34, 29, 41);
+}
+.nav-links {
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    display: inline-block; /* Change to inline-block for proper hover effect */
+    position: relative;
+    transition: color 0.4s; /* Add transition for color change */
+}
+.nav-links::after {
+    content: ""; 
+    background-color: transparent; /* Set initial background color */
+    width: 0; /* Set initial width to 0 */
+    height: 2px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s, background-color 0.5s; /* Add transition for width and background-color */
+}
+.nav-links:hover::after {
+    background-color: var(--secondary-color-orange);
+    width: 100%;
+}
+.nav-links:hover {
+    color: rgb(58, 58, 58);
+}
+.default-landing-bg {
+    background-color: var(--landing-bg);
+}
+.primary-red-text {
+    color: var(--secondary-color);
+}
+.primary-red-bg {
+    background-color: var(--secondary-color);
+}
+.contact-us-nav {
+    border: solid 1px var(--secondary-color);
+    padding: 8px;
+    transition: 300ms;
+}
+.contact-us-nav:hover {
+    border: solid 1px rgb(226, 226, 226);
+    padding: 8px;
+    color: white;
+    background-color: var(--secondary-color);
+}
+.custom-box-shadow {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.custom-box-shadow2 {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.middlle-section {
+    background-color: var(--middle-plate-dark);
+}
+.menu-cards-bg {
+    background-color: var(--landing-bg);
+}
+.custom-border {
+    border: solid 10px var(--secondary-color);
+}
